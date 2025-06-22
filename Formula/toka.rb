@@ -1,14 +1,12 @@
 class Toka < Formula
-  desc "AI-powered commit assistant for the terminal"
+  desc "AI-powered commit assistant"
   homepage "https://github.com/ademajagon/toka"
-  url "https://github.com/ademajagon/toka/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "7826957f791f557cb858f595070e718390e4e1f821f69ac81f416621e3881046"
-  license "MIT"
-
-  depends_on "go" => :build
+  url "https://github.com/ademajagon/toka/releases/download/v0.1.0/toka-darwin-arm64"
+  sha256 "aa5fedb040f5a7f2385ceb59e3c0b929f073dca08557f85567eec08a0d06063a"
+  version "0.1.0"
 
   def install
-    system "go", "build", *std_go_args, "./main.go"
+    bin.install "toka-darwin-arm64" => "toka"
   end
 
   test do
