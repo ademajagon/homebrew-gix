@@ -2,7 +2,7 @@ class Toka < Formula
   desc "AI-powered commit assistant"
   homepage "https://github.com/ademajagon/toka"
   url "https://github.com/ademajagon/toka-distribution/releases/download/v0.1.0/toka-darwin-arm64"
-  sha256 "e5ecbf5db8359d4ff83011b41760d44b3557077cd924ab4fb1339302e16a496e"
+  sha256 "7e602fe6a89f2369d3d5c4c824282a0598197dee68ab4b5204a65f64cf4133be"
   version "0.1.0"
 
   def install
